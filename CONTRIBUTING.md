@@ -1,29 +1,29 @@
 # Contributing
 
-Thanks for considering a change to this template.
+Thank you for considering a change to this template.
 
-## Local setup
+## Local Setup
 
-1. Fork and clone the repo.
+1. Fork and clone the repository.
 2. Install the dependencies the pipeline uses:
 
    ```
    pip install pytest pytest-cov flake8
    ```
 
-3. Run the same checks CI runs before you open a pull request:
+3. Run the same checks CI runs before opening a pull request:
 
    ```
    flake8 . --max-line-length=100
    pytest --cov=. --cov-report=term-missing
    ```
 
-## Opening a pull request
+## Opening a Pull Request
 
 1. Create a branch for your change.
-2. Make sure flake8 and pytest both pass locally.
-3. Open a pull request against main. CI runs the same checks automatically, and it has to pass before merging.
+2. Confirm that both flake8 and pytest pass locally.
+3. Open a pull request against main. The CI workflow runs the same checks automatically and must pass before merging.
 
-## What to contribute
+## What to Contribute
 
-This repo is small on purpose. It's a template, not a full application. Improvements to the workflow file itself, clearer docs, or a slightly more realistic example are more useful than making the sample code bigger.
+This repository is intentionally small; it is a template, not a full application. Improvements to the workflow file itself, clearer documentation, or a more realistic example are more valuable than expanding the sample code into something larger.
