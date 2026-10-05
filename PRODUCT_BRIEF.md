@@ -1,26 +1,28 @@
 # Product Brief: CI/CD Pipeline Template
 
 ## Problem
-When people start a new Python project, they usually skip automated testing
-and style checks early on, or they waste time wiring up CI from scratch every
-time. Bugs and style issues creep in before anyone catches them.
+Developers starting a new Python project often skip automated testing and
+style checks early on, or spend time manually configuring CI/CD for every
+new repository. As a result, bugs and style issues go unnoticed until
+later in development.
 
 ## Solution
-A ready-to-use GitHub Actions workflow (`.github/workflows/ci.yml`) that any
-Python project can copy in. It runs pytest and flake8 automatically on every
-push and pull request to `main`, so failures get caught before they merge.
+A ready-to-use GitHub Actions workflow (`.github/workflows/ci.yml`) that
+any Python project can copy in directly. It runs pytest and flake8
+automatically on every push and pull request to `main`, so failures are
+caught before code is merged.
 
 ## Target Users ("Builders")
 Individual developers and small teams who want consistent code quality
-without hand-configuring CI/CD every time they start something new.
+without configuring CI/CD from scratch for every new project.
 
 ## Success Metrics
-- Time to add CI to a new repo: copy one file instead of building a pipeline
-  from scratch
-- How often lint or test failures get caught by CI before merge, instead of
-  after
+- Time to add CI to a new repository: copying one file rather than
+  building a pipeline from scratch
+- Frequency with which lint or test failures are caught by CI before
+  merge, rather than after
 
 ## Out of Scope (for this version)
-- Deployment/CD steps (this template is CI only)
+- Deployment/CD steps (this template covers CI only)
 - Language support beyond Python
 - Multi-OS test matrix
