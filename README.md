@@ -1,8 +1,8 @@
 # ci-cd-pipeline-template
 
-A ready-to-use GitHub Actions workflow that runs linting and tests on every
-push and pull request to a Python project. Copy one file in, get CI running
-in a couple of minutes.
+A ready-to-use GitHub Actions workflow that runs linting, tests, and a
+coverage report on every push and pull request to a Python project. Copy
+one file in, get CI running in a couple of minutes.
 
 ## What it does
 
@@ -10,9 +10,9 @@ On every push or pull request to `main`, the workflow:
 
 1. Checks out your code
 2. Sets up Python 3.11
-3. Installs `pytest` and `flake8`
+3. Installs `pytest`, `pytest-cov`, and `flake8`
 4. Runs `flake8` (style/lint checks)
-5. Runs `pytest` (tests)
+5. Runs `pytest` with coverage (tests, plus a coverage report printed in the Actions log)
 
 If either step fails, the run is marked failed and shows up as a red X on the
 commit/PR, so problems get caught before they merge instead of after.
@@ -31,6 +31,12 @@ commit/PR, so problems get caught before they merge instead of after.
 `calculator.py` and `test_calculator.py` are a minimal example the pipeline
 runs against, just to prove the workflow works end to end. They're not the
 point — the workflow file is.
+
+## Contributing
+
+See `CONTRIBUTING.md` for local setup and how to open a pull request.
+Issue and pull request templates live under `.github/` so contributions
+follow a consistent format.
 
 ## Project management
 
