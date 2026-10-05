@@ -22,8 +22,8 @@ Thanks for considering a change to this template.
 
 1. Create a branch for your change.
 2. Make sure flake8 and pytest both pass locally.
-3. Open a pull request against main. The CI workflow runs the same checks automatically and must pass before merging.
+3. Open a pull request against main. CI runs the same checks automatically, and it has to pass before merging.
 
 ## What to contribute
 
-This repo is intentionally small, it's a template, not a full application. Improvements to the workflow file itself, clearer documentation, or a slightly more realistic example are more useful than expanding the sample code into something bigger.
+This repo is small on purpose. It's a template, not a full application. Improvements to the workflow file itself, clearer docs, or a slightly more realistic example are more useful than making the sample code bigger.
